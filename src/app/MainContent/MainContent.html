@@ -1,0 +1,20 @@
+<table>
+	<tr>
+		<th>ID</th>
+		<th>First name</th>
+		<th>Last name</th>
+		<th>DoB</th>
+		<th (click)="sortedStudents()" style="cursor:pointer;">Average
+			<img width="10" height="10" src="resources/images/sort.png" />
+		</th>
+		<th>Status</th>
+	</tr>
+	<tr *ngFor="let student of students">
+		<td>{{ student.id }}</td>
+		<td>{{ student.firstname }}</td>
+		<td>{{ student.lastname }}</td>
+		<td>{{ student.dob }}</td>
+		<td>{{ student.average }}</td>
+		<td>{{ student.status }}</td>
+	</tr>
+</table>
